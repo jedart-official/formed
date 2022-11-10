@@ -1,0 +1,146 @@
+//************************************************// 
+//***************** FRONT-PAGE *******************// 
+//************************************************// 
+
+//**************** FROM SECTION *****************// 
+
+.from {
+
+    // .from__display
+
+    &__display {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    &__display .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .from__display-left
+
+    &__display-left {
+        max-width: 570px;
+    }
+
+    // .from__display-btn
+
+    &__display-btn {
+        width: 220px;
+        text-align: center;
+        padding: 13px 20px;
+    }
+
+    // .from__display-descr
+
+    &__display-descr {
+        margin-top: 30px;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.05em;
+        color: #3F3E3E;
+    }
+}
+
+//**************** DOCTORS SECTION *****************// 
+
+.doctors {
+    transition: 0.3s all ease;
+    margin-top: 100px;
+    // .doctors__content
+
+    &__content {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px
+    }
+
+    // .doctors__card
+
+    &__card {
+        display: flex;
+        transition: 0.2s all ease;
+        padding: 15px;
+        border-radius: 15px;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.597);
+        }
+    }
+
+    // .doctors__link
+
+
+
+    // .doctors__card-white
+
+    &__card-white {
+        background-color: white;
+    }
+    
+    // .doctors__card-info
+
+    &__card-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+        gap: 5px;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    // .doctors__card-fio
+
+    &__card-fio {
+        color: black;
+    }
+
+    // .doctors__card-rating
+
+    &__card-rating {
+        margin-left: auto;
+    }
+
+    // .doctors__card-specials
+
+    &__card-specials {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+    }
+
+    // .doctors__card-enroll
+
+    &__card-enroll {
+        margin-top: 34px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .doctors__card-stars
+
+    &__card-stars {
+        margin-right: 15px;
+    }
+
+}
+
+.special {
+    &__item {
+        display: flex;
+        padding: 9px 14px;
+        background: $specialColorActive;
+        border-radius: 5px;
+        color: $textActive;
+        align-items: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        cursor: pointer;
+    }
+}
+

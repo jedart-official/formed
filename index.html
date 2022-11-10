@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main class = "main">
+        <header class="header">
+            <div class="container">
+                <a class = "header__logo" href="/">ForMed</a> 
+                <a href="/pages/auth-page.html" class="header__btn btn"> Записаться</a>
+            </div>
+        </header>
+        <section class="from__display">
+            <div class="container">
+                <div class="from__display-left">
+                    <div class="from__display-btn btn">
+                       <span>Мы обеспечим</span> 
+                    </div>
+                    <h1 class="from__display-title title">Лучший сервис для частных медицинских кабинетов</h1>
+                    <div class="from__display-descr">
+                       <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.</p>
+                    </div>
+                </div>
+                <div class="from__display-logo">
+                    <svg width="335" height="376" viewBox="0 0 335 376" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M167.463 56.4C183.744 56.4 196.943 43.7744 196.943 28.2C196.943 12.6256 183.744 0 167.463 0C151.181 0 137.982 12.6256 137.982 28.2C137.982 43.7744 151.181 56.4 167.463 56.4Z" fill="#7DAED3"/>
+                        <path d="M167.463 84.6C162.374 84.6 157.435 83.9795 152.722 82.8162V376H182.203V82.8162C177.49 83.9795 172.551 84.6 167.463 84.6Z" fill="#6EA5CF"/>
+                        <path d="M79.0208 28.2H0.405823C0.405823 74.9224 59.367 141 118.328 141H123.242V101.48C96.8074 86.8523 79.0208 59.5145 79.0208 28.2Z" fill="#9CC4E4"/>
+                        <path d="M255.904 28.2C255.904 59.5145 238.118 86.8523 211.684 101.48V141H216.597C275.558 141 334.519 74.9224 334.519 28.2H255.904V28.2Z" fill="#6593B8"/>
+                        <path d="M59.367 178.6C43.0859 178.6 29.8864 191.226 29.8864 206.8C29.8864 222.374 43.0859 235 59.367 235H123.242V178.6H59.367Z" fill="#6593B8"/>
+                        <path d="M275.558 178.6H211.684V235H275.558C291.839 235 305.039 222.374 305.039 206.8C305.039 191.226 291.839 178.6 275.558 178.6Z" fill="#7DAED3"/>
+                        <path d="M236.251 263.2H211.684V319.6H236.251C252.532 319.6 265.731 306.974 265.731 291.4C265.731 275.826 252.532 263.2 236.251 263.2Z" fill="#98C5E8"/>
+                        <path d="M98.6745 263.2C82.3934 263.2 69.1939 275.826 69.1939 291.4C69.1939 306.974 82.3934 319.6 98.6745 319.6H123.242V263.2H98.6745V263.2Z" fill="#7DAED3"/>
+                    </svg>                  
+                </div>
+            </div>
+        </section>
+        <section class="best__doctors">
+            <div class="container">
+                <h2 class="doctors__title title">Лучшие врачи </h2>
+                <div class="doctors__content">
+                    <a href = "pages/doctor-single-page.html" class="doctors__card">
+                        <div class="doctors__card-photo">
+                            <img src="/img/front-page/doctor.png" alt="">
+                        </div>
+                        <div class="doctors__card-info">
+                            <span class="doctors__card-fio">Соловьев Иван Иванович</span>
+                            <span class="doctors__card-old">25 лет</span>
+                            <span class="doctors__card-exp">Стаж: 8 лет</span>
+                            <span class="doctors__card-address" data-city="Костанай">Адрес: г.Костанай, ул.Пушкина, д.28</span>
+                            <span class="doctors__card-phone">Рабочий телефон: 8 (700) 0000 000</span>
+                        </div>
+                        <div class="doctors__card-rating">
+                            <div class="doctors__card-specials">
+                                <span class="special__item" data-special="Стомотолог">Стомотолог</span>
+                            </div>
+                            <div class="doctors__card-enroll">
+                                <div class="doctors__card-stars">
+                                    <img class = "star" src="/img/front-page/star.svg" alt="">
+                                    <img class = "star" src="/img/front-page/star.svg" alt="">
+                                    <img class = "star" src="/img/front-page/star.svg" alt="">
+                                    <img class = "star" src="/img/front-page/star.svg" alt="">
+                                    <img class = "star" src="/img/front-page/star.svg" alt="">
+                                </div>
+                                <button class="doctors__card-btn empty__btn modal__btn">Записаться</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href = "pages/doctor-single-page.htmll" class="doctors__card">
+                        <div class="doctors__card-photo">
+                            <img src="/img/front-page/doctor.png" alt="">
+                        </div>
+                        <div class="doctors__card-info">
+                            <span class="doctors__card-fio">Соловьев Иван Иванович</span>
+                            <span class="doctors__card-old">25 лет</span>
+                            <span class="doctors__card-exp">Стаж: 8 лет</span>
+                            <span class="doctors__card-address" data-city="Костанай">Адрес: г.Костанай, ул.Пушкина, д.28</span>
+                            <span class="doctors__card-phone">Рабочий телефон: 8 (700) 0000 000</span>
+                        </div>
+                        <div class="doctors__card-rating">
+                            <div class="doctors__card-specials">
+                                <span class="special__item" data-special="Стомотолог">Стомотолог</span>
+                            </div>
+                            <div class="doctors__card-enroll">
+                                <div class="doctors__card-stars">
+                                    <img class = "star" src="/img/front-page/star.svg" alt="">
+                                    <img class = "star" src="/img/front-page/star.svg" alt="">
+                                    <img class = "star" src="/img/front-page/star.svg" alt="">
+                                    <img class = "star" src="/img/front-page/star.svg" alt="">
+                                    <img class = "star" src="/img/front-page/star.svg" alt="">
+                                </div>
+                                <button class="doctors__card-btn empty__btn modal__btn">Записаться</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href = "pages/doctor-single-page.html" class="doctors__card">
+                        <div class="doctors__card-photo">
+                            <img src="/img/front-page/doctor.png" alt="">
+                        </div>
+                        <div class="doctors__card-info">
+                            <span class="doctors__card-fio">Соловьев Иван Иванович</span>
+                            <span class="doctors__card-old">25 лет</span>
+                            <span class="doctors__card-exp">Стаж: 8 лет</span>
+                            <span class="doctors__card-address" data-city="Костанай">Адрес: г.Костанай, ул.Пушкина, д.28</span>
+                            <span class="doctors__card-phone">Рабочий телефон: 8 (700) 0000 000</span>
+                        </div>
+                        <div class="doctors__card-rating">
+                            <div class="doctors__card-specials">
+                                <span class="special__item" data-special="Стомотолог">Стомотолог</span>
+                            </div>
+                            <div class="doctors__card-enroll">
+                                <div class="doctors__card-stars">
+                                    <img class = "star" src="/img/front-page/star.svg" alt="">
+                                    <img class = "star" src="/img/front-page/star.svg" alt="">
+                                    <img class = "star" src="/img/front-page/star.svg" alt="">
+                                    <img class = "star" src="/img/front-page/star.svg" alt="">
+                                    <img class = "star" src="/img/front-page/star.svg" alt="">
+                                </div>
+                                <button class="doctors__card-btn empty__btn modal__btn">Записаться</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal__wrapper">
+        <from class="modal">
+            <div class="modal__close"> <img src="../img/front-page/cancel.svg" alt="cancel" width="10px" height="10px"></div>
+            <div class="modal__title title"><span>Запись на прием</span> </div>
+            <div class="modal__body">
+                <label for="" class="modal__label">Выберите день приема</label>
+                <div class="modal__calendar swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">  
+                            <h2 class="cabinet__title calendar__title title">Июнь</h2>
+                            <div class="calendar__days">
+                                <div class="calendar__day" >1</div>
+                                <div class="calendar__day" >2</div>
+                                <div class="calendar__day" >3</div>
+                                <div class="calendar__day calendar__day-active" >4</div>
+                                <div class="calendar__day" >5</div>
+                                <div class="calendar__day" >6</div>
+                                <div class="calendar__day" >7</div>
+                                <div class="calendar__day calendar__day-active" >8</div>
+                                <div class="calendar__day" >9</div>
+                                <div class="calendar__day" >10</div>
+                                <div class="calendar__day" >11</div>
+                                <div class="calendar__day calendar__day-active" >12</div>
+                                <div class="calendar__day" >13</div>
+                                <div class="calendar__day" >14</div>
+                                <div class="calendar__day" >15</div>
+                                <div class="calendar__day calendar__day-active" >16</div>
+                                <div class="calendar__day" >17</div>
+                                <div class="calendar__day" >18</div>
+                                <div class="calendar__day" >19</div>
+                                <div class="calendar__day calendar__day-active" >20</div>
+                                <div class="calendar__day" >21</div>
+                                <div class="calendar__day" >22</div>
+                                <div class="calendar__day" >23</div>
+                                <div class="calendar__day calendar__day-active" >24</div>
+                                <div class="calendar__day" >25</div>
+                                <div class="calendar__day" >26</div>
+                                <div class="calendar__day" >27</div>
+                                <div class="calendar__day calendar__day-active" >28</div>
+                                <div class="calendar__day" >29</div>
+                                <div class="calendar__day" >30</div>
+                                <div class="calendar__day" >31</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">  
+                            <h2 class="cabinet__title calendar__title title">Июнь</h2>
+                            <div class="calendar__days">
+                                <div class="calendar__day" >1</div>
+                                <div class="calendar__day" >2</div>
+                                <div class="calendar__day" >3</div>
+                                <div class="calendar__day calendar__day-active" >4</div>
+                                <div class="calendar__day" >5</div>
+                                <div class="calendar__day" >6</div>
+                                <div class="calendar__day" >7</div>
+                                <div class="calendar__day calendar__day-active" >8</div>
+                                <div class="calendar__day" >9</div>
+                                <div class="calendar__day" >10</div>
+                                <div class="calendar__day" >11</div>
+                                <div class="calendar__day calendar__day-active" >12</div>
+                                <div class="calendar__day" >13</div>
+                                <div class="calendar__day" >14</div>
+                                <div class="calendar__day" >15</div>
+                                <div class="calendar__day calendar__day-active" >16</div>
+                                <div class="calendar__day" >17</div>
+                                <div class="calendar__day" >18</div>
+                                <div class="calendar__day" >19</div>
+                                <div class="calendar__day calendar__day-active" >20</div>
+                                <div class="calendar__day" >21</div>
+                                <div class="calendar__day" >22</div>
+                                <div class="calendar__day" >23</div>
+                                <div class="calendar__day calendar__day-active" >24</div>
+                                <div class="calendar__day" >25</div>
+                                <div class="calendar__day" >26</div>
+                                <div class="calendar__day" >27</div>
+                                <div class="calendar__day calendar__day-active" >28</div>
+                                <div class="calendar__day" >29</div>
+                                <div class="calendar__day" >30</div>
+                                <div class="calendar__day" >31</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">  
+                            <h2 class="cabinet__title calendar__title title">Июнь</h2>
+                            <div class="calendar__days">
+                                <div class="calendar__day" >1</div>
+                                <div class="calendar__day" >2</div>
+                                <div class="calendar__day" >3</div>
+                                <div class="calendar__day calendar__day-active" >4</div>
+                                <div class="calendar__day" >5</div>
+                                <div class="calendar__day" >6</div>
+                                <div class="calendar__day" >7</div>
+                                <div class="calendar__day calendar__day-active" >8</div>
+                                <div class="calendar__day" >9</div>
+                                <div class="calendar__day" >10</div>
+                                <div class="calendar__day" >11</div>
+                                <div class="calendar__day calendar__day-active" >12</div>
+                                <div class="calendar__day" >13</div>
+                                <div class="calendar__day" >14</div>
+                                <div class="calendar__day" >15</div>
+                                <div class="calendar__day calendar__day-active" >16</div>
+                                <div class="calendar__day" >17</div>
+                                <div class="calendar__day" >18</div>
+                                <div class="calendar__day" >19</div>
+                                <div class="calendar__day calendar__day-active" >20</div>
+                                <div class="calendar__day" >21</div>
+                                <div class="calendar__day" >22</div>
+                                <div class="calendar__day" >23</div>
+                                <div class="calendar__day calendar__day-active" >24</div>
+                                <div class="calendar__day" >25</div>
+                                <div class="calendar__day" >26</div>
+                                <div class="calendar__day" >27</div>
+                                <div class="calendar__day calendar__day-active" >28</div>
+                                <div class="calendar__day" >29</div>
+                                <div class="calendar__day" >30</div>
+                                <div class="calendar__day" >31</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label for="" class="modal__label">Выберите время приема</label>
+                <div class="modal__times">
+                    <div class="modal__times-item" >08:00</div>
+                    <div class="modal__times-item" >08:15</div>
+                    <div class="modal__times-item" >08:30</div>
+                    <div class="modal__times-item" >08:45</div>
+                    <div class="modal__times-item" >09:00</div>
+                    <div class="modal__times-item" >09:15</div>
+                    <div class="modal__times-item" >08:00</div>
+                    <div class="modal__times-item" >08:15</div>
+                    <div class="modal__times-item" >08:30</div>
+                    <div class="modal__times-item" >08:45</div>
+                    <div class="modal__times-item" >09:00</div>
+                    <div class="modal__times-item" >09:15</div>
+                    <div class="modal__times-item" >08:00</div>
+                    <div class="modal__times-item" >08:15</div>
+                    <div class="modal__times-item" >08:30</div>
+                    <div class="modal__times-item" >08:45</div>
+                    <div class="modal__times-item" >09:00</div>
+                    <div class="modal__times-item" >09:15</div>
+                </div>
+                <button class="modal__submit-btn btn">
+                    Записаться
+                </button>
+            </div>
+        </form>
+    </div> 
+
+    <div class="modal__wrapper-2">
+        <div class="modal">
+        <div class="modal__close-2"> <img src="img/front-page/cancel.svg" alt="cancel" width="10px" height="10px"></div>
+        <div class="modal__title"><span>Запись оформлена</span> </div>
+        <span class="modal__message">Талон отправлен вам на почту</span>
+        <div class="modal__body">
+            <img style = "height: 100px;" src="/img/front-page/success.svg" alt="">
+        </div>
+        </div>
+    </div> 
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/modals.js"></script>
+<script src="../js/swiper.js"></script>
+<script src="../js/effects.js"></script>
+<script>
+    bindModal('.modal__btn', '.modal__wrapper', '.modal__close')
+    bindModal('.modal__submit-btn', '.modal__wrapper-2', '.modal__close-2')
+</script>
+</html>

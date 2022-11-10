@@ -1,0 +1,36 @@
+//**************** ACTION CLASSES*****************// 
+
+.filter_show {
+    border: 1px solid #7DAED3;
+    transition: 0.3s all ease;
+}
+
+.tab_active {
+    border-bottom:  0.5px solid #7DAED3;
+}
+
+.tab-wrapper_active {
+    transform: translateX(0) !important;
+    height: 100% !important;
+    transition: 0.5s all ease !important;
+    overflow-y: scroll !important;
+
+}
+
+.filter__item_active {
+    font-weight: bold !important;
+}
+
+.doctor__special-item_active {
+    height: 40px;
+    padding: 9px 14px;
+    background: #7DAED3;
+    color: white;
+}
+
+.select_active {
+    background-color: $specialColorActive;
+    color: $textActive !important;
+}
+
+

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class = "main">
+        <header class="header">
+            <div class="container">
+                <a class = "header__logo" href="/">ForMed</a> 
+                <div class="header__action">
+                    <div class="cabinet__rating">
+                        <span>Ваш рейтинг: </span>
+                        <img src="/img/front-page/star.svg" alt="">
+                        <img src="/img/front-page/star.svg" alt="">
+                        <img src="/img/front-page/star.svg" alt="">
+                        <img src="/img/front-page/star.svg" alt="">
+                        <img src="/img/front-page/star.svg" alt="">
+                    </div>
+                    <a href="/" class="header__btn btn "> Выйти</a>
+                </div>
+            </div>
+        </header>
+        <section class="cabinet">
+            <div class="container">
+                <h2 class="cabinet__title title"> Личный кабинет <h2>
+                <div class="cabinet__content">
+                    <div class="cabinet__action-bar">
+                        <div class="cabinet__tabs">
+                            <ul class = "cabinet__list">
+                                <li class = "cabinet__item tab_active">Личные данные</li>
+                                <li class = "cabinet__item">История приемов</li>
+                                <li class = "cabinet__item">Мой график</li>
+                                <li class = "cabinet__item">
+                                    <span class = "cabinet__item-counter">11</span>
+                                    Записи
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cabinet__wrapper">
+                        <form type = "" action = "" class="cabinet__display tab-wrapper_active">
+                            <div class="cabinet__display-wrapper">
+                                <div class="cabinet__info">
+                                    <div class="cabinet__photo">
+                                        <img src="/img/front-page/doctor.png" alt="">
+                                        <label for="upload-photo" class = "cabinet__btn btn">Загрузить фото</label>
+                                        <input name = "photo" id = "upload-photo" type = "file" class ="upload-photo" multiple>    </input>
+                                    </div>
+                                    <div class="cabinet__data">
+                                        <div class="cabinet__column-1 ">
+                                            <span class="cabinet__column-name">Редактирование личных данных</span>
+                                            <div class="cabinet__info-block">
+                                                <div class="cabinet__column">
+                                                    <div class="cabinet__info-item">
+                                                        <label class = "cabinet__lable">Фамилия</label>
+                                                        <input name = "surname" class = "cabinet__input" type="text">
+                                                    </div>
+                                                    <div class="cabinet__info-item">
+                                                        <label class = "cabinet__lable">Имя</label>
+                                                        <input name = "name" class = "cabinet__input" type="text">
+                                                    </div>
+                                                    <div class="cabinet__info-item">
+                                                        <label class = "cabinet__lable">Отчество</label>
+                                                        <input name = "lastname" class = "cabinet__input" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__column">
+                                                <div class="cabinet__info-item">
+                                                    <label class = "cabinet__lable">Дата Рождения</label>
+                                                    <input name = "data-of-birthday" class = "cabinet__input" type="date">
+                                                </div>
+                                                <div class="cabinet__info-item">
+                                                    <label class = "cabinet__lable">Номер телефона</label>
+                                                    <input name = "phone" class = "cabinet__input" type="phone">
+                                                </div>
+                                                <div class="cabinet__info-item">
+                                                    <label class = "cabinet__lable">Почта</label>
+                                                    <input name = "email" class = "cabinet__input" type="email">
+                                                </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="cabinet__column-2 ">
+                                            <span class="cabinet__column-name">Смена пароля</span>
+                                            <div class="cabinet__info-block ">
+                                                <div class="cabinet__column">
+                                                    <div class="cabinet__info-item">
+                                                        <label class = "cabinet__lable">Логин</label>
+                                                        <input name="login" class = "cabinet__input" type="text">
+                                                    </div>
+                                                    <div class="cabinet__info-item">
+                                                        <label class = "cabinet__lable">Пароль</label>
+                                                        <input name = "password" class = "cabinet__input" type="password">
+                                                    </div>
+                                                    <div class="cabinet__info-item">
+                                                        <label class = "cabinet__lable">Повторите пароль</label>
+                                                        <input name = "repassword" class = "cabinet__input" type="password">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cabinet__bottom">
+                                    <div class="cabinet__specials">
+                                        <div class="special__item doctor__special-item">
+                                            <span>Стомотолог</span>
+                                        </div>
+                                        <div class="special__item doctor__special-item">
+                                            <span>Дантист</span>
+                                        </div>
+                                        <div class="special__item doctor__special-item">
+                                            <span>Стомотолог</span>
+                                        </div>
+                                        <div class="special__item doctor__special-item">
+                                            <span>Дантист</span>
+                                        </div>
+                                        <div class="special__item doctor__special-item">
+                                            <span>Стомотолог</span>
+                                        </div>
+                                        <div class="special__item doctor__special-item">
+                                            <span>Дантист</span>
+                                        </div>
+                                        <div class="special__item doctor__special-item">
+                                            <span>Стомотолог</span>
+                                        </div>
+                                        <div class="special__item doctor__special-item">
+                                            <span>Дантист</span>
+                                        </div>
+                                        <div class="special__item doctor__special-item">
+                                            <span>Стомотолог</span>
+                                        </div>
+                                        <div class="special__item doctor__special-item">
+                                            <span>Дантист</span>
+                                        </div>
+                                    </div>
+                                    <button action = "" class="cabinet__save-btn btn">Сохранить данные</button>
+                                </div>
+                            </div>
+                        </form>
+                        <form type = "" action = "" class="cabinet__display">
+                            <div class="cabinet__display-wrapper">
+                                <div class="cabinet__filters filters_wrapper-3">
+                                    <div class="cabinet__filter filter">
+                                        <div class="filter__name">Сортировать по</div>
+                                        <div class="filter__arrow">
+                                            <img src="/img/doctros-page/filter-point.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="filters__list filter__list-3">
+                                        <ul class = "filter__list">
+                                            <li class="filter__item">Номер приема</li>
+                                            <li class="filter__item">Дата приема</li>
+                                            <li class="filter__item">Время приема</li>
+                                            <li class="filter__item">Стоимость приема</li>
+                                            <li class="filter__item">ФИО</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <table class="cabinet__table">
+                                    <thead>
+                                        <th>№</th>
+                                        <th>Дата приема</th>
+                                        <th>Время приема</th>
+                                        <th>Стоимость приема</th>
+                                        <th>ФИО пациента</th>
+                                    </thead>
+                                    
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>30.05.2022</td>
+                                            <td>20:05</td>
+                                            <td>Яковлев Андрей Николаевич</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>30.05.2022</td>
+                                            <td>20:05</td>
+                                            <td>Яковлев Андрей Николаевич</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>30.05.2022</td>
+                                            <td>20:05</td>
+                                            <td>Яковлев Андрей Николаевич</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>30.05.2022</td>
+                                            <td>20:05</td>
+                                            <td>Яковлев Андрей Николаевич</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>30.05.2022</td>
+                                            <td>20:05</td>
+                                            <td>Яковлев Андрей Николаевич</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>30.05.2022</td>
+                                            <td>20:05</td>
+                                            <td>Яковлев Андрей Николаевич</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>30.05.2022</td>
+                                            <td>20:05</td>
+                                            <td>Яковлев Андрей Николаевич</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>30.05.2022</td>
+                                            <td>20:05</td>
+                                            <td>Яковлев Андрей Николаевич</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>30.05.2022</td>
+                                            <td>20:05</td>
+                                            <td>Яковлев Андрей Николаевич</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                        <form type = "" action = "" class="cabinet__display calendar__display">
+                            <div class="cabinet__display-wrapper cabinet__display-wrapper-flex">
+                                <div class="calendar">
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <!-- Slides -->
+                                            <div class="swiper-slide">  
+                                                <h2 class="cabinet__title calendar__title title">Июнь</h2>
+                                                <div class="calendar__days">
+                                                    <div class="calendar__day" >1</div>
+                                                    <div class="calendar__day" >2</div>
+                                                    <div class="calendar__day" >3</div>
+                                                    <div class="calendar__day calendar__day-active" >4</div>
+                                                    <div class="calendar__day" >5</div>
+                                                    <div class="calendar__day" >6</div>
+                                                    <div class="calendar__day" >7</div>
+                                                    <div class="calendar__day calendar__day-active" >8</div>
+                                                    <div class="calendar__day" >9</div>
+                                                    <div class="calendar__day" >10</div>
+                                                    <div class="calendar__day" >11</div>
+                                                    <div class="calendar__day calendar__day-active" >12</div>
+                                                    <div class="calendar__day" >13</div>
+                                                    <div class="calendar__day" >14</div>
+                                                    <div class="calendar__day" >15</div>
+                                                    <div class="calendar__day calendar__day-active" >16</div>
+                                                    <div class="calendar__day" >17</div>
+                                                    <div class="calendar__day" >18</div>
+                                                    <div class="calendar__day" >19</div>
+                                                    <div class="calendar__day calendar__day-active" >20</div>
+                                                    <div class="calendar__day" >21</div>
+                                                    <div class="calendar__day" >22</div>
+                                                    <div class="calendar__day" >23</div>
+                                                    <div class="calendar__day calendar__day-active" >24</div>
+                                                    <div class="calendar__day" >25</div>
+                                                    <div class="calendar__day" >26</div>
+                                                    <div class="calendar__day" >27</div>
+                                                    <div class="calendar__day calendar__day-active" >28</div>
+                                                    <div class="calendar__day" >29</div>
+                                                    <div class="calendar__day" >30</div>
+                                                    <div class="calendar__day" >31</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">  
+                                                <h2 class="cabinet__title calendar__title title">Июнь</h2>
+                                                <div class="calendar__days">
+                                                    <div class="calendar__day" >1</div>
+                                                    <div class="calendar__day" >2</div>
+                                                    <div class="calendar__day" >3</div>
+                                                    <div class="calendar__day calendar__day-active" >4</div>
+                                                    <div class="calendar__day" >5</div>
+                                                    <div class="calendar__day" >6</div>
+                                                    <div class="calendar__day" >7</div>
+                                                    <div class="calendar__day calendar__day-active" >8</div>
+                                                    <div class="calendar__day" >9</div>
+                                                    <div class="calendar__day" >10</div>
+                                                    <div class="calendar__day" >11</div>
+                                                    <div class="calendar__day calendar__day-active" >12</div>
+                                                    <div class="calendar__day" >13</div>
+                                                    <div class="calendar__day" >14</div>
+                                                    <div class="calendar__day" >15</div>
+                                                    <div class="calendar__day calendar__day-active" >16</div>
+                                                    <div class="calendar__day" >17</div>
+                                                    <div class="calendar__day" >18</div>
+                                                    <div class="calendar__day" >19</div>
+                                                    <div class="calendar__day calendar__day-active" >20</div>
+                                                    <div class="calendar__day" >21</div>
+                                                    <div class="calendar__day" >22</div>
+                                                    <div class="calendar__day" >23</div>
+                                                    <div class="calendar__day calendar__day-active" >24</div>
+                                                    <div class="calendar__day" >25</div>
+                                                    <div class="calendar__day" >26</div>
+                                                    <div class="calendar__day" >27</div>
+                                                    <div class="calendar__day calendar__day-active" >28</div>
+                                                    <div class="calendar__day" >29</div>
+                                                    <div class="calendar__day" >30</div>
+                                                    <div class="calendar__day" >31</div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">  
+                                                <h2 class="cabinet__title calendar__title title">Июнь</h2>
+                                                <div class="calendar__days">
+                                                    <div class="calendar__day" >1</div>
+                                                    <div class="calendar__day" >2</div>
+                                                    <div class="calendar__day" >3</div>
+                                                    <div class="calendar__day calendar__day-active" >4</div>
+                                                    <div class="calendar__day" >5</div>
+                                                    <div class="calendar__day" >6</div>
+                                                    <div class="calendar__day" >7</div>
+                                                    <div class="calendar__day calendar__day-active" >8</div>
+                                                    <div class="calendar__day" >9</div>
+                                                    <div class="calendar__day" >10</div>
+                                                    <div class="calendar__day" >11</div>
+                                                    <div class="calendar__day calendar__day-active" >12</div>
+                                                    <div class="calendar__day" >13</div>
+                                                    <div class="calendar__day" >14</div>
+                                                    <div class="calendar__day" >15</div>
+                                                    <div class="calendar__day calendar__day-active" >16</div>
+                                                    <div class="calendar__day" >17</div>
+                                                    <div class="calendar__day" >18</div>
+                                                    <div class="calendar__day" >19</div>
+                                                    <div class="calendar__day calendar__day-active" >20</div>
+                                                    <div class="calendar__day" >21</div>
+                                                    <div class="calendar__day" >22</div>
+                                                    <div class="calendar__day" >23</div>
+                                                    <div class="calendar__day calendar__day-active" >24</div>
+                                                    <div class="calendar__day" >25</div>
+                                                    <div class="calendar__day" >26</div>
+                                                    <div class="calendar__day" >27</div>
+                                                    <div class="calendar__day calendar__day-active" >28</div>
+                                                    <div class="calendar__day" >29</div>
+                                                    <div class="calendar__day" >30</div>
+                                                    <div class="calendar__day" >31</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time-of-work">
+                                        <label for="startWork">Начало рабочего дня</label>
+                                        <input name = "startWork" type="time">
+                                        <label for="endWork">Конец рабочего дня</label>
+                                        <input name = "endWork" type="time">
+                                    </div>
+                                </div>
+                                <button class="cabinet__btn calendar__btn btn">
+                                    Сохранить данные
+                                </button>
+                            </div>
+                        </form>
+                        <form type = "" action = "" class="cabinet__display">
+                            <div class="cabinet__display-wrapper">
+                                <div class="cabinet__filters filters_wrapper-4">
+                                    <div class="cabinet__filter filter">
+                                        <div class="filter__name">Сортировать по</div>
+                                        <div class="filter__arrow">
+                                            <img src="/img/doctros-page/filter-point.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="filters__list filter__list-4">
+                                        <ul class = "filter__list">
+                                            <li class="filter__item">Текуший день</li>
+                                            <li class="filter__item">За 3 дня</li>
+                                            <li class="filter__item">За неделю</li>
+                                            <li class="filter__item">За месяц</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <table class="cabinet__table">
+                                    <thead>
+                                        <th>№</th>
+                                        <th>Дата приема</th>
+                                        <th>Время приема</th>
+                                        <th>ФИО пациента</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>30.05.2022</td>
+                                            <td>20:05</td>
+                                            <td>Яковлев Андрей Николаевич</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>30.05.2022</td>
+                                            <td>20:05</td>
+                                            <td>Яковлев Андрей Николаевич</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>30.05.2022</td>
+                                            <td>20:05</td>
+                                            <td>Яковлев Андрей Николаевич</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>30.05.2022</td>
+                                            <td>20:05</td>
+                                            <td>Яковлев Андрей Николаевич</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>30.05.2022</td>
+                                            <td>20:05</td>
+                                            <td>Яковлев Андрей Николаевич</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>30.05.2022</td>
+                                            <td>20:05</td>
+                                            <td>Яковлев Андрей Николаевич</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>30.05.2022</td>
+                                            <td>20:05</td>
+                                            <td>Яковлев Андрей Николаевич</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>30.05.2022</td>
+                                            <td>20:05</td>
+                                            <td>Яковлев Андрей Николаевич</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>30.05.2022</td>
+                                            <td>20:05</td>
+                                            <td>Яковлев Андрей Николаевич</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/swiper.js"></script>
+<script src="../js/tabs.js"></script>
+<script src="../js/specials.js"></script>
+<script src="../js/filters.js"></script>
+<script>
+    tabsClick("cabinet__item", ".cabinet__display", ".cabinet__list", tabsConfig.tabsShowActiveClass)
+    filters(".filters_wrapper-3",  ".filter__list-3", ".filters_wrapper-3", "")
+    filters(".filters_wrapper-4",  ".filter__list-4", ".filters_wrapper-4", "")
+</script>
+</html>

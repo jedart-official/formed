@@ -1,0 +1,22 @@
+//********************** HEADER ********************// 
+
+.header {
+    &__logo {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 0.05em;
+        color: #525252;
+    }
+    &__btn {
+        font-size: 16px;
+    }
+    &__action {
+        display: flex;
+    }
+}
+.header .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}

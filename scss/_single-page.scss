@@ -1,0 +1,127 @@
+.single {
+
+    // .single__info
+
+    &__info {
+        padding: 0 40px;
+        border-left: 1px solid #7DAED3;
+    }
+
+    // .single__title
+
+    &__title {
+        margin-bottom: 40px;
+        font-size: 26px;
+    }
+
+    // .single__card
+
+    &__card {
+        display: flex;
+    }
+
+    // .single__photo
+
+    &__photo {
+        margin-right: 100px;
+        img {
+            width: 300px;
+        }
+    }
+
+    // .single__data
+
+    &__data {
+        color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #7DAED3;;
+    }
+
+    // .single__rating
+
+    &__rating {
+        margin-top: 30px;
+    }
+
+    // .single__specials
+
+    &__specials {
+        margin: 20px 0;
+    }
+
+    &__special-item {
+        max-width: 120px;
+        justify-content: center;
+    }
+
+    &__enroll {
+        margin-bottom: 10px;
+        color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+
+
+
+
+
+.swiper-2, .swiper-3 {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.certificate {
+    img {
+        height: 350px;
+    }
+}
+
+.previous {
+
+		// .previous__item
+
+		&__item {
+            max-width: 380px;
+            width: 100%;
+            padding: 10px;
+            background-color: #FFFFFF;
+            border-radius: 15px;
+		}
+
+		// .previous__head
+
+		&__head {
+            display: flex;
+            margin-bottom: 15px;
+		}
+
+		// .previous__name
+
+		&__name {
+            font-size: 12px;
+            display: flex;
+            margin-right: 50px;
+            gap: 10px;
+            align-items: center;
+		}
+
+		// .previous__body
+
+		&__body {
+            font-size: 12px;
+            line-height: 149.02%;
+            letter-spacing: 0.05em;
+            color: #9A9A9A;
+		}
+}

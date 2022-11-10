@@ -1,0 +1,105 @@
+// ************************ Модальное окно ************************ //
+// mf
+.modal__wrapper, .modal__wrapper-2{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    display: none;
+        .modal {
+            background: white;
+            padding: 25px;
+            border-radius: 5px;
+            height: 100vh;
+            width: 600px;   
+                &__title {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                    font-size: 28px;
+                    margin-top: 0;
+                }
+                &__close{
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                &__calendar {
+                    margin-bottom: 10px;
+                }
+                &__label {
+
+                    display: block;
+                }
+                &__times{
+                    display: flex;
+                    gap: 5px;
+                    width: 100%;
+                    margin-top: 20px;
+                    flex-wrap: wrap;
+                }
+                &__times-item {
+                    border: 1px solid $textNormal ;
+                    padding: 10px 20px;
+                    width: 80px;
+                    display: flex;
+                    justify-content: center;
+                    color: $textNormal;
+                    border-radius: 5px;
+                    transition: 0.3s all ease;
+                    &:hover {
+                        background-color: $textNormal;
+                        color: $textActive;
+                    }
+                }
+                &__submit-btn {
+                    margin-top: 20px;
+                    margin: 40px auto 0 auto;
+
+                }
+    }
+}
+
+// ************************ Кнопка вызова модального окна ************************ //
+.modal__btn  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.modal__wrapper-2 {
+    .modal {
+        border-radius: 10px;
+        width: 400px;
+        height: 250px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        &__title {
+            margin-bottom: 5px;
+        }
+        &__message {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #9A9A9A;
+        }
+        &__body {
+            justify-content: center;
+            display: flex;
+        }
+        &__close-2 {
+            margin-left: auto;
+        }
+    }
+}
+

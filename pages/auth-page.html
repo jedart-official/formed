@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main class = "main auth">
+        <section class="auth__section">
+            <form action="" class="auth__form">
+                <h2 class="auth__title header__logo title">ForMed</h2>
+                <div class="auth__select">
+                    <span class="auth__log-in auth__select-item auth__select-item-1 select_active">
+                       Вход
+                    </span>
+                    <span class="auth__reg-on auth__select-item auth__select-item-2">
+                        Регистрация
+                    </span> 
+                </div>
+                <div class="auth__wrapper">
+                    <div class="auth__fields auth__display auth__display-1 tab-wrapper_active">
+                        <input name = "login" type="text" class="auth__field" placeholder="Логин или ИИН">
+                        <input name = "password" type="password" class = "auth__field" placeholder="Пароль">
+                    </div>
+                    <div class="auth__fields auth__display auth__display-2">
+                        <input name = "login" type="text" class="auth__field" placeholder="Логин или ИИН">
+                        <input name = "password" type="password" class = "auth__field" placeholder="Пароль">
+                    </div>
+                </div>
+                <button class="auth__submit btn">
+                    Войти
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+<script src="../js/config.js"></script>
+<script src="../js/tabs.js"></script>
+<script src="../js/auth.js"></script>
+<script>
+    tabsClick("auth__select-item", ".auth__display", ".auth__select", authConfig.authSelectItemActiveClass)
+</script>
+</html>

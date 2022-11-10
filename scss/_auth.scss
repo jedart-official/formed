@@ -1,0 +1,124 @@
+
+.auth {
+        width: unset;
+        max-width: 500px;
+        padding-top: 0;
+        
+        padding-bottom: 0;
+		// .auth__section
+
+		&__section {
+            display: flex;
+            justify-content: center;
+            
+		}
+
+		// .auth__form
+
+		&__form {
+            transition: 0.3s all ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 25px;
+            width: 100%;
+            margin: auto;
+		}
+
+		// .auth__title
+
+		&__title {
+            margin-top: 0;
+            margin-bottom: 25px;
+		}
+
+		// .auth__select
+
+		&__select {
+            display: flex;
+            width: 100%;
+            gap: 15px;
+            margin-bottom: 60px;
+            border: 1px solid #7DAED3;
+            border-radius: 5px;
+            justify-content: center;
+
+		}
+
+		// .auth__log-in
+
+		&__log-in, &__reg-on {
+            width: 230px;
+            padding: 16px 0;
+            color: $textNormal;
+            font-weight: 700;
+            text-align: center;
+            font-size: 24px;
+            line-height: 29px;
+            letter-spacing: 0.05em;
+		}
+ 
+
+		// .auth__fields
+
+		&__fields {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            width: 100%;
+		}
+
+		// .auth__field
+
+		&__field {
+            width: 100%;
+            padding: 17px 10px;
+            border: 2px solid #7DAED3;
+            background: none;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 27px;
+            letter-spacing: 0.05em;
+            color: $textNormal;
+            &::placeholder {
+                color: $textNormal;
+            }
+
+		}
+
+		// .auth__submit
+
+		&__submit {
+            margin-top: 40px;
+            width: 240px;
+            height: 60px;
+		}
+
+        // .auth__display
+
+        &__display {
+            transform: translateX(1000px);
+            overflow: hidden !important;
+            height: 0;
+            &::-webkit-scrollbar {
+                  background: none;
+                  width: 5px;
+              }
+              &::-webkit-scrollbar-thumb {
+                  background-color: #7DAED3;
+              }            
+        }
+
+        &__wrapper {
+            width: 100%;
+        }
+    
+        &__error {
+            margin-right: auto;
+            font-size: 16px;
+            color: #f65f5f
+        }
+}
+
